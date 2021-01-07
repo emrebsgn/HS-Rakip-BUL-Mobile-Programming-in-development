@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#163E4E"
+    tools:context=".Anasayfa">
+
+    <TextView
+        android:id="@+id/ustAdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Emrebisgun"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:layout_marginTop="28dp"
+        android:rotationX="50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        app:srcCompat="@drawable/ic_action_analiysis2" />
+
+    <TableLayout
+        android:id="@+id/tableLayout6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:background="#163E4E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Takım:"
+                android:textColor="#81B214"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kırmızı Şeytanlar"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saha Adı: "
+                android:textColor="#81B214"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Red/White"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kadro:"
+                android:textColor="#81B214"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Evet"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18sp" />
+
+
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maç Saati: "
+                android:textColor="#81B214"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maç yok"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18sp" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kırmızı Şeytanlar"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="@+id/ustAdText"
+        app:layout_constraintTop_toBottomOf="@+id/ustAdText" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:drawableRight="@drawable/ic_action_bidirim"
+        android:text="Durum"
+        android:textColor="#FDFDFD"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/buttonAnasayfa"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#81B214"
+        android:drawableBottom="@drawable/ic_action_anasayfa"
+        android:textSize="6sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonTakim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout6" />
+
+    <Button
+        android:id="@+id/buttonProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="13dp"
+        android:backgroundTint="#81B214"
+        android:drawableBottom="@drawable/ic_action_profil"
+        android:onClick="profil"
+        android:textSize="6sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonIstek"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout6" />
+
+    <Button
+        android:id="@+id/buttonIstek"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#81B214"
+        android:drawableBottom="@drawable/ic_action_bidirim"
+        android:onClick="istek"
+        android:textSize="6sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonProfil"
+        app:layout_constraintStart_toEndOf="@+id/buttonTakim"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout6" />
+
+    <Button
+        android:id="@+id/buttonTakim"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#81B214"
+        android:drawableBottom="@drawable/ic_action_takimm"
+        android:textSize="6sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonIstek"
+        app:layout_constraintStart_toEndOf="@+id/buttonAnasayfa"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
